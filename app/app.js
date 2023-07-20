@@ -73,8 +73,12 @@ function UpdateData2CurrentLocation(response) {
 
   currentLocation.innerHTML = `📍${response.data.name}, ${response.data.sys.country}`;
   currentTemperature.innerHTML = Math.round(response.data.main.temp * 10) / 10;
-  minTemp.innerHTML = `Min temp ${response.data.main.temp_min}°C`;
-  maxTemp.innerHTML = `Max temp ${response.data.main.temp_max}°C`;
+  minTemp.innerHTML = `Min temp ${
+    Math.round(response.data.main.temp_min * 10) / 10
+  }°C`;
+  maxTemp.innerHTML = `Max temp ${
+    Math.round(response.data.main.temp_max * 10) / 10
+  }°C`;
   weatherDescription.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   wind.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
