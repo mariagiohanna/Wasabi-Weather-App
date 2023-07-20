@@ -72,7 +72,7 @@ function UpdateData2CurrentLocation(response) {
   let feels_like = document.querySelector("#feels_like");
 
   currentLocation.innerHTML = `📍${response.data.name}, ${response.data.sys.country}`;
-  currentTemperature.innerHTML = response.data.main.temp;
+  currentTemperature.innerHTML = Math.round(response.data.main.temp * 10) / 10;
   minTemp.innerHTML = `Min temp ${response.data.main.temp_min}°C`;
   maxTemp.innerHTML = `Max temp ${response.data.main.temp_max}°C`;
   weatherDescription.innerHTML = response.data.weather[0].description;
