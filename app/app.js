@@ -26,7 +26,7 @@ function showCurrentTime(event) {
   ];
   let currentTime = document.querySelector("#currentTime");
   let currentDate = document.querySelector("#currentDate");
-  currentDate.innerHTML = `${now.getDate()}, ${now.getDate()} ${
+  currentDate.innerHTML = `${days[now.getDay()]}, ${now.getDate()} ${
     months[now.getMonth()]
   } ${now.getFullYear()}`;
   if (now.getMinutes() < 10) {
