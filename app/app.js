@@ -26,6 +26,7 @@ function showCurrentTime(event) {
   ];
   let currentTime = document.querySelector("#currentTime");
   let currentDate = document.querySelector("#currentDate");
+  console.log(now.getDate());
   currentDate.innerHTML = `${days[now.getDate()]}, ${now.getDate()} ${
     months[now.getMonth()]
   } ${now.getFullYear()}`;
