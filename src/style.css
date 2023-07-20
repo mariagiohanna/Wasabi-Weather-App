@@ -37,6 +37,9 @@
   background-color: white;
   border-radius: 50%;
 }
+.footer {
+  text-align: center;
+}
 
 .currentTemperature {
   margin-left: 15px;
