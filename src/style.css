@@ -66,10 +66,10 @@
   text-decoration: none;
 }
 
-/* #celsius:hover,
+#celsius:hover,
 #fahr:hover {
-  font-weight: bold;
-} */
+  text-decoration: underline;
+}
 ul {
   list-style: none;
 }
